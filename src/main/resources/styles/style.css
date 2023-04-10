@@ -1,0 +1,12 @@
+.root{
+    -fx-background-color: Lightgray;
+}
+
+.btn{
+    -fx-background-color: cyan;
+    -fx-border-color: black;
+}
+.btn :hover{
+    -fx-cursor: hand;
+    -fx-background-color: rgba(211, 211, 211, 0.8);
+}
