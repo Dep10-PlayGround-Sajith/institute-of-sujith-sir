@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.dep10.app.control.TeacherSceneController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="621.0" prefWidth="1013.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.control.TeacherSceneController">
+   <children>
+      <Button fx:id="btnNewTeacher" layoutX="52.0" layoutY="44.0" mnemonicParsing="false" onAction="#btnNewTeacherOnAction" prefHeight="24.0" prefWidth="233.0" text="+ NEW TEACHER" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="44.0" />
+      <TextField fx:id="txtName" layoutX="476.0" layoutY="38.0" prefHeight="24.0" prefWidth="362.0" promptText="Name" AnchorPane.rightAnchor="175.0" />
+      <ImageView fx:id="imgView" fitHeight="163.0" fitWidth="200.0" layoutX="52.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="290.0" />
+      <Button fx:id="btnBrowse" layoutX="59.0" layoutY="485.0" mnemonicParsing="false" onAction="#btnBrowseOnAction" prefHeight="24.0" prefWidth="109.0" text="BROWSE" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="852.0" />
+      <Button fx:id="btnClear" layoutX="169.0" layoutY="485.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="24.0" prefWidth="99.0" text="CLEAR" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="745.0" />
+      <Button fx:id="btnSave" layoutX="496.0" layoutY="256.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="99.0" text="SAVE" AnchorPane.leftAnchor="496.0" AnchorPane.rightAnchor="418.0" />
+      <Button fx:id="btnDelete" layoutX="711.0" layoutY="256.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="24.0" prefWidth="127.0" text="DELETE" AnchorPane.leftAnchor="711.0" AnchorPane.rightAnchor="175.0" />
+      <TextField fx:id="txtxCpntact" layoutX="476.0" layoutY="117.0" prefHeight="24.0" prefWidth="362.0" promptText="Contact" AnchorPane.rightAnchor="175.0" />
+      <TableView fx:id="tblDetails" layoutX="362.0" layoutY="359.0" prefHeight="200.0" prefWidth="623.0" AnchorPane.leftAnchor="362.0" AnchorPane.rightAnchor="28.0">
+        <columns>
+          <TableColumn prefWidth="214.0" text="NAME" />
+          <TableColumn prefWidth="119.0" text="PICTURE" />
+            <TableColumn prefWidth="132.0" text="CONTACT NO" />
+            <TableColumn prefWidth="156.0" text="GENDER" />
+        </columns>
+      </TableView>
+      <HBox layoutX="52.0" layoutY="160.0" prefHeight="35.0" prefWidth="260.0" spacing="20.0" AnchorPane.bottomAnchor="426.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="160.0">
+         <children>
+            <RadioButton fx:id="rdoG6" mnemonicParsing="false" onAction="#rdoG6OnAction" text="G - 6" />
+            <RadioButton fx:id="rdoG7" mnemonicParsing="false" onAction="#rdoG7OnAction" text="G -7" />
+            <RadioButton fx:id="rdoG8" mnemonicParsing="false" onAction="#rdoG8OnAction" text="G -8" />
+         </children>
+      </HBox>
+      <HBox layoutX="52.0" layoutY="195.0" prefHeight="35.0" prefWidth="260.0" spacing="20.0" AnchorPane.bottomAnchor="391.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="195.0">
+         <children>
+            <RadioButton fx:id="rdoG9" mnemonicParsing="false" onAction="#rdoG9OnACtion" text="G -9" />
+            <RadioButton fx:id="rdoG10" mnemonicParsing="false" onAction="#rdoG10OnAction" text="G -10" />
+            <RadioButton fx:id="rdoG11" mnemonicParsing="false" onAction="#rdoG11OnAction" text="G -11" />
+         </children>
+      </HBox>
+      <HBox layoutX="56.0" layoutY="256.0" prefHeight="24.0" prefWidth="274.0" spacing="50.0" />
+      <TextField fx:id="txtGender" layoutX="476.0" layoutY="77.0" prefHeight="24.0" prefWidth="163.0" promptText="Gender" AnchorPane.rightAnchor="175.0" />
+      <Label layoutX="354.0" layoutY="42.0" text="NAME :" AnchorPane.rightAnchor="612.0" />
+      <Label layoutX="356.0" layoutY="81.0" text="GENDER :" AnchorPane.rightAnchor="593.0" />
+      <Label layoutX="354.0" layoutY="121.0" text="CONTACT NO :" AnchorPane.rightAnchor="563.0" />
+      <ComboBox fx:id="cmbbox" editable="true" layoutX="476.0" layoutY="77.0" onAction="#cmbboxOnAction" prefWidth="150.0" promptText="Choose Gender" />
+   </children>
+   <styleClass>
+      <String fx:value="anchor" />
+      <String fx:value="root" />
+      <String fx:value="invalid" />
+   </styleClass>
 </AnchorPane>

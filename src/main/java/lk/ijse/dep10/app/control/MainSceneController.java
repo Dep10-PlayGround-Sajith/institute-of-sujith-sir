@@ -57,7 +57,8 @@ public class MainSceneController {
     public void btnTeacherOnAction(ActionEvent event) {
         try {
             Stage stage= (Stage)btnAttendance.getScene().getWindow();
-            stage.setScene(new Scene(new FXMLLoader().load(getClass().getResource("/view/TeacherScene.fxml"))));
+            new FXMLLoader();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/TeacherScene.fxml"))));
             stage.setTitle("Teacher");
             stage.show();
             stage.centerOnScreen();

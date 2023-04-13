@@ -10,3 +10,12 @@
     -fx-cursor: hand;
     -fx-background-color: rgba(211, 211, 211, 0.8);
 }
+.invalid {
+    -fx-border-color: red !important;
+    -fx-text-fill: red;
+    -fx-border-style: red;
+}
+.anchor {
+    -fx-background-image:url(/image/tree-6792528__340.jpg);
+    -fx-background-size: 100% 100%;
+}
