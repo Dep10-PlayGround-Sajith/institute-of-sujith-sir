@@ -14,3 +14,12 @@
     -fx-font-size: 18;
     -fx-font-weight: bold;
 }
+.invalid {
+    -fx-border-color: red !important;
+    -fx-text-fill: red;
+    -fx-border-style: red;
+}
+.anchor {
+    -fx-background-image:url(/image/tree-6792528__340.jpg);
+    -fx-background-size: 100% 100%;
+}
