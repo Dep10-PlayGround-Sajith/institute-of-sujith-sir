@@ -1,0 +1,53 @@
+.root{
+    -fx-background-color: white;
+    -fx-font-family: Ubuntu;
+    -fx-font-size: 14px;
+}
+.heading {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+.border{
+    -fx-border-width: 1px;
+    -fx-border-color: #bbb6b6;
+}
+.invalid{
+    -fx-border-color: red !important;
+    -fx-text-fill: red;
+
+}
+#btnNewStudent {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+
+#btnNewStudent:hover {
+    -fx-background-color: rgba(0, 128, 0, 0.8);
+}
+
+#btnSave {
+    -fx-background-color: #019de0;
+    -fx-text-fill: white;
+}
+
+#btnSave:hover {
+    -fx-background-color: rgba(1, 157, 224, 0.8);
+}
+
+#btnDelete {
+    -fx-background-color: #cb0000;
+    -fx-text-fill: white;
+}
+
+#btnDelete:hover {
+    -fx-background-color: rgba(203, 0, 0, 0.8);;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+}
+
+.text-field:focused {
+    -fx-border-color: #019de0;
+}

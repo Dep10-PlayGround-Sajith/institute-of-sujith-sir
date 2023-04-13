@@ -10,3 +10,7 @@
     -fx-cursor: hand;
     -fx-background-color: rgba(211, 211, 211, 0.8);
 }
+.heading {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
